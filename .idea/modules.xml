@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway.iml" group="api-gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_main.iml" group="api-gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_test.iml" group="api-gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-service/config-service.iml" filepath="$PROJECT_DIR$/.idea/modules/config-service/config-service.iml" group="config-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-service/config-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-service/config-service_main.iml" group="config-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-service/config-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/config-service/config-service_test.iml" group="config-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server.iml" group="eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_main.iml" group="eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_test.iml" group="eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passport-service/passport-service.iml" filepath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service.iml" group="passport-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passport-service/passport-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_main.iml" group="passport-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passport-service/passport-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_test.iml" group="passport-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/price-service/price-service.iml" filepath="$PROJECT_DIR$/.idea/modules/price-service/price-service.iml" group="price-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/price-service/price-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/price-service/price-service_main.iml" group="price-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/price-service/price-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/price-service/price-service_test.iml" group="price-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service/product-service.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service/product-service.iml" group="product-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service/product-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service/product-service_main.iml" group="product-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service/product-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service/product-service_test.iml" group="product-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/review-service/review-service.iml" filepath="$PROJECT_DIR$/.idea/modules/review-service/review-service.iml" group="review-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/review-service/review-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/review-service/review-service_main.iml" group="review-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/review-service/review-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/review-service/review-service_test.iml" group="review-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cloud-gradle-sample.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cloud-gradle-sample.iml" />
+    </modules>
+  </component>
+</project>

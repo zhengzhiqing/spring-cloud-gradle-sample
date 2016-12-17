@@ -4,3 +4,5 @@ include 'passport-service'
 include 'api-gateway'
 include 'price-service'
 include 'review-service'
+include 'config-service'
+

@@ -1,15 +1,14 @@
 package com.ecommerce.passportservice.controller;
 
-import com.ecommerce.eurekaserver.vo.LoginRequest;
-import com.ecommerce.eurekaserver.vo.LoginResult;
 import com.ecommerce.passportservice.util.RandomUtil;
+import com.ecommerce.passportservice.vo.LoginResult;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -20,11 +19,11 @@ public class PassportController {
     @Autowired
     private DiscoveryClient client;
 
-    @RequestMapping(value = "/session" ,method = RequestMethod.POST)
-    public LoginResult login(@RequestBody LoginRequest loginRequest) {
+    @RequestMapping(value = "/session", method = RequestMethod.POST)
+    public LoginResult login(@RequestParam String userName, @RequestParam String password) {
         ServiceInstance instance = client.getLocalServiceInstance();
         LoginResult loginResult = new LoginResult();
-        loginResult.setUserName(loginRequest.getUserName());
+        loginResult.setUserName(userName);
         loginResult.setSuccess(true);
         loginResult.setSessionToken(RandomUtil.getRandomString(32));
 

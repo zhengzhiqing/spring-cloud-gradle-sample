@@ -1,5 +1,6 @@
 package com.ecommerce.gateway;
 
+import com.ecommerce.gateway.filter.AccessLogFilter;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -19,6 +20,11 @@ public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(ApiGatewayApplication.class).web(true).run(args);
+	}
+
+	@Bean
+	public AccessLogFilter accessLogFilter() {
+		return new AccessLogFilter();
 	}
 
 }

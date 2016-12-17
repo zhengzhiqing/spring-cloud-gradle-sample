@@ -31,7 +31,7 @@ public class ProductController {
     @Autowired
     ReviewServiceProxy reviewServiceProxy;
 
-    @RequestMapping(value = "/gw/product/detail", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/product/detail", produces = "application/json", method = RequestMethod.GET)
     public ProductAll getProductDetail(@RequestParam int productId) {
         ProductInfo productInfo  = restTemplate.getForObject("http://PRODUCT-SERVICE/product/info?productId={productId}", ProductInfo.class, productId);
         ProductPrice productPrice = restTemplate.getForObject("http://PRICE-SERVICE/product/price?productId={productId}", ProductPrice.class, productId);

@@ -24,6 +24,12 @@ public class ReviewController {
         ProductReview productReview = new ProductReview();
         productReview.setProductId(productId);
         productReview.setProductReview("product review");
+//        try {
+//            logger.info("sleep 2 seconds to test circuit breaker");
+//            Thread.currentThread().sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         logger.info("productId:" + productId +
                 ", productReview:" + productReview.getProductReview() + ",return from ["

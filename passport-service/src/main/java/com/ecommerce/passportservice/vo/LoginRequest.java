@@ -1,4 +1,4 @@
-package com.ecommerce.eurekaserver.vo;
+package com.ecommerce.passportservice.vo;
 
 /**
  * Created by zhengzhiqing on 16/12/16.
