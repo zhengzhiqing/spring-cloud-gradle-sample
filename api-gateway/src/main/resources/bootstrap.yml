@@ -3,9 +3,11 @@ spring:
     name: api-gateway
   cloud:
     config:
-      profile: dev
+      profile: prod
       label: master
-      uri: http://localhost:8888/
+      discovery:
+        enabled: true
+        serviceId: config-service
 
 server:
   port: 8080

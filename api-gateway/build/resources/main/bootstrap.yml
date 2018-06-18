@@ -1,6 +1,14 @@
 spring:
   application:
     name: api-gateway
+  cloud:
+    config:
+      profile: prod
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config-service
+#      uri: http://localhost:8888/
 
 server:
   port: 8080

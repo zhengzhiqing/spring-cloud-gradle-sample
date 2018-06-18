@@ -4,6 +4,8 @@ import com.ecommerce.gateway.feignclient.PriceFeignService;
 import com.ecommerce.gateway.feignclient.ProductFeignService;
 import com.ecommerce.gateway.feignclient.ReviewFeignService;
 import com.ecommerce.gateway.vo.ProductAll;
+import com.ecommerce.gateway.vo.ProductInfo;
+import com.ecommerce.gateway.vo.ProductPrice;
 import com.ecommerce.gateway.vo.ProductReview;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,8 +15,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
-
 /**
  * Created by zhengzhiqing on 16/12/15.
  */
@@ -22,13 +22,13 @@ import java.math.BigDecimal;
 public class ItemDetailFeignController {
 
     @Autowired
-    private ProductFeignService productService;
+    private ProductFeignService productFeignService;
 
     @Autowired
-    private ReviewFeignService reviewService;
+    private ReviewFeignService reviewFeignService;
 
     @Autowired
-    private PriceFeignService priceService;
+    private PriceFeignService priceFeignService;
 
     private Logger logger = LoggerFactory.getLogger(ItemDetailFeignController.class);
 
@@ -40,18 +40,14 @@ public class ItemDetailFeignController {
     @GetMapping(value = "/api/feign/item/{productId}", produces = "application/json")
     public ProductAll getItemDetail(@PathVariable int productId) {
 
-//        ProductInfo productInfo = productService.getProductInfo(productId);
-//
-//        ProductPrice productPrice = priceService.getProductPrice(productId);
-
-        ProductReview productReview = reviewService.getProductReview(productId);
+        ProductInfo productInfo = productFeignService.getProductInfo(productId);
+        ProductPrice productPrice = priceFeignService.getProductPrice(productId);
+        ProductReview productReview = reviewFeignService.getProductReview(productId);
 
         ProductAll productAll = new ProductAll();
-        BeanUtils.copyProperties(productReview, productAll);
-        productAll.setProductPrice(BigDecimal.TEN);
-        productAll.setProductTitle("productTitle");
-        productAll.setBrandName("brandName");
-        productAll.setCategoryName("categoryName");
+        BeanUtils.copyProperties(productInfo, productAll);
+        productAll.setProductPrice(productPrice.getProductPrice());
+        productAll.setProductReview(productReview.getProductReview());
 
         return productAll;
     }

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigController {
 
-    @Value("${message: hello world default}")
+    @Value("${message}")
     private String message;
 
     @GetMapping("/message")

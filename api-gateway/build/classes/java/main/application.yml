@@ -1,0 +1,49 @@
+zuul:
+  # by default, /{serviceId}/ will be routed to {serviceId}, we can disable this config
+  ignoredServices: '*'
+  retryable: true
+  routes:
+    passport-service:
+      path: /session/**
+      serviceId: passport-service
+      stripPrefix: false
+    product-service:
+      path: /product/*/info
+      serviceId: product-service
+      stripPrefix: false
+    price-service:
+      path: /product/*/price
+      serviceId: price-service
+      stripPrefix: false
+    review-service:
+      path: /product/*/review
+      serviceId: review-service
+      stripPrefix: false
+
+## global config for ribbon
+ribbon:
+  ConnectTimeout: 500
+  ReadTimeout: 1500
+  ## if we want to retry GET only, set to false
+  OkToRetryOnAllOperation: true
+  MaxAutoRetriesNextServer: 1
+  MaxAutoRetries: 1
+## to enable zuul retry, use spring retry or set ribbon.restclient.enable=true
+#  restclient:
+#    enabled: true
+
+#### feign global config
+feign:
+  hystrix:
+    enabled: true
+
+##hystrix command global config
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8050

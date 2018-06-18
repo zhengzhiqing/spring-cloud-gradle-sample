@@ -22,13 +22,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class ItemDetailRibbonController {
 
     @Autowired
-    private ReviewRibbonService reviewServiceProxy;
+    private ReviewRibbonService reviewRibbonService;
 
     @Autowired
-    private ProductRibbonService productServiceProxy;
+    private ProductRibbonService productRibbonService;
 
     @Autowired
-    private PriceRibbonService priceServiceProxy;
+    private PriceRibbonService priceRibbonService;
 
     private Logger logger = LoggerFactory.getLogger(ItemDetailRibbonController.class);
 
@@ -37,14 +37,14 @@ public class ItemDetailRibbonController {
      * @param productId
      * @return
      */
-    @GetMapping(value = "/api/item/{productId}", produces = "application/json")
+    @GetMapping(value = "/api/ribbon/item/{productId}", produces = "application/json")
     public ProductAll getItemDetail(@PathVariable int productId) {
 
-        ProductInfo productInfo = productServiceProxy.getProductInfoWithFallback(productId);
+        ProductInfo productInfo = productRibbonService.getProductInfoWithFallback(productId);
 
-        ProductPrice productPrice = priceServiceProxy.getProductPriceWithFallback(productId);
+        ProductPrice productPrice = priceRibbonService.getProductPriceWithFallback(productId);
 
-        ProductReview productReview = reviewServiceProxy.getProductReviewWithFallback(productId);
+        ProductReview productReview = reviewRibbonService.getProductReviewWithFallback(productId);
 
         ProductAll productAll = new ProductAll();
         BeanUtils.copyProperties(productInfo, productAll);

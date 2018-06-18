@@ -1,13 +1,13 @@
-.gradle
-.idea
+/.gradle
+/.idea
+/classes
+/gradle
+/bin
+/build
 .DS_Store
 .settings
 .classpath
 .project
-/bin
-/build
-/classes
-/gradle
 *.iml
 
 ### STS ###

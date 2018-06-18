@@ -18,7 +18,7 @@ public class SessionRibbonController {
     @Autowired
     RestTemplate restTemplate;
 
-    @PostMapping(value = "/api/session", produces = "application/json")
+    @PostMapping(value = "/api/ribbon/session", produces = "application/json")
     public LoginResult login(String userName, String password) {
 
         MultiValueMap<String, String> reqMap= new LinkedMultiValueMap<String, String>();
