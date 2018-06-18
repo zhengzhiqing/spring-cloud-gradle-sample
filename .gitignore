@@ -1,9 +1,32 @@
 .gradle
+.idea
+.DS_Store
 .settings
 .classpath
 .project
 /bin
 /build
+/classes
 /gradle
-.idea
 *.iml
+
+### STS ###
+.apt_generated
+.factorypath
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/

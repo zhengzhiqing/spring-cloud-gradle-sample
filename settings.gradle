@@ -1,8 +1,12 @@
+rootProject.name = 'spring-cloud-gradle-sample'
+
 include 'eureka-server'
+include 'config-service'
 include 'product-service'
 include 'passport-service'
-include 'api-gateway'
 include 'price-service'
 include 'review-service'
-include 'config-service'
+include 'api-gateway'
+include 'turbine'
+include 'hystrix-dashboard'
 

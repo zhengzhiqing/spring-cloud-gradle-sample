@@ -50,4 +50,14 @@ public class LoginResult {
         this.errorMsg = errorMsg;
     }
 
+    @Override
+    public String toString() {
+        return "LoginResult{" +
+                "userName='" + userName + '\'' +
+                ", success=" + success +
+                ", sessionToken='" + sessionToken + '\'' +
+                ", errorCode=" + errorCode +
+                ", errorMsg='" + errorMsg + '\'' +
+                '}';
+    }
 }

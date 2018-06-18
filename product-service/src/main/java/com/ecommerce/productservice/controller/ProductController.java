@@ -1,42 +1,31 @@
 package com.ecommerce.productservice.controller;
 
 import com.ecommerce.productservice.vo.ProductInfo;
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ProductController {
 
-    private final Logger logger = Logger.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
-    @Autowired
-    private DiscoveryClient client;
+    @GetMapping(value = "/product/{productId}/info" ,produces = "application/json")
+    public ProductInfo getProductInfo(@PathVariable int productId) {
 
-    @RequestMapping(value = "/product/info" ,method = RequestMethod.GET)
-    public ProductInfo getProductInfo(@RequestParam int productId) {
-        ServiceInstance instance = client.getLocalServiceInstance();
+        logger.info(Thread.currentThread().getName() + " start to execute...");
+        long start = System.currentTimeMillis();
+
         ProductInfo productInfo = new ProductInfo();
         productInfo.setProductId(productId);
         productInfo.setProductTitle("product title");
         productInfo.setBrandName("brand name");
         productInfo.setCategoryName("category name");
 
-        logger.info("productId:" + productId
-                + ", title:" + productInfo.getProductTitle()
-                + ", brand:" + productInfo.getBrandName()
-                + ", category:" + productInfo.getCategoryName()
-                + ", return from ["
-                + instance.getHost() + ":"
-                + instance.getPort()
-                + ",serviceId:"
-                + instance.getServiceId()
-                + "]");
+        logger.info(Thread.currentThread().getName() + " finished in ms:" + (System.currentTimeMillis() - start)
+                + ", result:" + productInfo);
 
         return productInfo;
     }

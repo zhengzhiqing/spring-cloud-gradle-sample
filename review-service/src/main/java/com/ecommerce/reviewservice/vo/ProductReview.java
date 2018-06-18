@@ -22,4 +22,12 @@ public class ProductReview {
     public void setProductReview(String productReview) {
         this.productReview = productReview;
     }
+
+    @Override
+    public String toString() {
+        return "ProductReview{" +
+                "productId=" + productId +
+                ", productReview='" + productReview + '\'' +
+                '}';
+    }
 }

@@ -1,15 +1,16 @@
 package com.ecommerce.gateway;
 
-import com.ecommerce.gateway.filter.AccessLogFilter;
-import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @EnableZuulProxy
 @SpringCloudApplication
+@EnableFeignClients
 public class ApiGatewayApplication {
 
 	@Bean
@@ -18,13 +19,7 @@ public class ApiGatewayApplication {
 		return new RestTemplate();
 	}
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(ApiGatewayApplication.class).web(true).run(args);
+	public static void main(String... args) {
+		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
-
-	@Bean
-	public AccessLogFilter accessLogFilter() {
-		return new AccessLogFilter();
-	}
-
 }

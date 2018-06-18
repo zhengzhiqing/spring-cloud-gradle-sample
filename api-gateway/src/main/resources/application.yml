@@ -1,0 +1,107 @@
+#The API gateway handles requests in one of two ways.
+#Some requests are simply proxied/routed to the appropriate service.
+#It handles other requests by fanning out to multiple services.
+zuul:
+  # by default, /{serviceId}/ will be routed to {serviceId}, we can disable this config
+  ignoredServices: '*'
+  retryable: true
+  routes:
+    passport-service:
+      path: /session/**
+      serviceId: passport-service
+      stripPrefix: false
+    product-service:
+      path: /product/*/info
+      serviceId: product-service
+      stripPrefix: false
+    price-service:
+      path: /product/*/price
+      serviceId: price-service
+      stripPrefix: false
+    review-service:
+      path: /product/*/review
+      serviceId: review-service
+      stripPrefix: false
+
+## global config for ribbon
+ribbon:
+  ConnectTimeout: 500
+  ReadTimeout: 1500
+  ## if we want to retry GET only, set to false
+  OkToRetryOnAllOperation: true
+  MaxAutoRetriesNextServer: 1
+  MaxAutoRetries: 1
+## to enable zuul retry, must set ribbon.restclient.enable=true
+#  restclient:
+#    enabled: true
+
+#### feign global config
+feign:
+  hystrix:
+    enabled: true
+#  client:
+#    default:
+#      ConnectionTimeout: 1000
+#      ReadTimeout: 1000
+#      OkToRetryOnAllOperation: false
+#      MaxAutoRetriesNextServer: 0
+#      MaxAutoRetries: 0
+
+##hystrix command global config
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8050
+
+#logging:
+#  level:
+#    com.netflix: DEBUG
+
+## ribbon config for each service: <service-id>.ribbon.key = value
+#product-service:
+#  ribbon:
+#    ConnectionTimeout: 500
+#    ReadTimeout: 1000
+#    OkToRetryOnAllOperation: true
+#    MaxAutoRetriesNextServer: 2
+#    MaxAutoRetries: 1
+#
+#price-service:
+#  ribbon:
+#    ConnectionTimeout: 500
+#    ReadTimeout: 1000
+#    OkToRetryOnAllOperation: true
+#    MaxAutoRetriesNextServer: 2
+#    MaxAutoRetries: 1
+#
+#review-service:
+#  ribbon:
+#    ConnectionTimeout: 500
+#    ReadTimeout: 1500
+#    OkToRetryOnAllOperation: false
+#    OkToRetryOnAllOperation: true
+#    MaxAutoRetriesNextServer: 2
+#    MaxAutoRetries: 1
+
+#hystrix:
+#  command:
+#    getProductPrice:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 2000
+#    getProductInfo:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 2000
+#    getProductReview:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 2000

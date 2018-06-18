@@ -41,4 +41,13 @@ public class ProductInfo {
         this.categoryName = categoryName;
     }
 
+    @Override
+    public String toString() {
+        return "ProductInfo{" +
+                "productId=" + productId +
+                ", productTitle='" + productTitle + '\'' +
+                ", brandName='" + brandName + '\'' +
+                ", categoryName='" + categoryName + '\'' +
+                '}';
+    }
 }

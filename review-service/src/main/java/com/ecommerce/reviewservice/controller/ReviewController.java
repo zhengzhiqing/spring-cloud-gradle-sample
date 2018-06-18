@@ -1,43 +1,39 @@
 package com.ecommerce.reviewservice.controller;
 
 import com.ecommerce.reviewservice.vo.ProductReview;
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Random;
 
 @RestController
 public class ReviewController {
 
-    private final Logger logger = Logger.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(ReviewController.class);
 
-    @Autowired
-    private DiscoveryClient client;
+    @GetMapping(value = "/product/{productId}/review" ,produces = "application/json")
+    public ProductReview getProductReview(@PathVariable int productId) {
 
-    @RequestMapping(value = "/product/review" ,method = RequestMethod.GET)
-    public ProductReview getProductReview(@RequestParam int productId) {
-        ServiceInstance instance = client.getLocalServiceInstance();
+        logger.info(Thread.currentThread().getName() + " start to execute...");
+        long start = System.currentTimeMillis();
+
         ProductReview productReview = new ProductReview();
         productReview.setProductId(productId);
         productReview.setProductReview("product review");
-//        try {
-//            logger.info("sleep 2 seconds to test circuit breaker");
-//            Thread.currentThread().sleep(2000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
 
-        logger.info("productId:" + productId +
-                ", productReview:" + productReview.getProductReview() + ",return from ["
-                + instance.getHost() + ":"
-                + instance.getPort()
-                + ",serviceId:"
-                + instance.getServiceId()
-                + "]");
+        try {
+            Thread.currentThread().sleep(new Random().nextInt(3000));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        logger.info(Thread.currentThread().getName() + " finished in ms:" + (System.currentTimeMillis() - start)
+                + ", result:" + productReview);
+
         return productReview;
+
     }
 }

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhengzhiqing/spring-cloud-gradle-sample
+          searchPaths: config-repo
+          username: zhengzhiqing
+          password: Justdoit318
+
+server:
+  port: 8888
+
