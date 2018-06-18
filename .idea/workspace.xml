@@ -2,277 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3049e60-c0fc-4629-ab1c-d41c969ac91b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/RouteFallbackProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/WebConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ItemDetailFeignController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ItemDetailRibbonController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/PriceFeignService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/PriceFeignServiceFallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ProductFeignService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ProductFeignServiceFallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ReviewFeignService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ReviewFeignServiceFallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/interceptor/AccessLogInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/ribbonclient/PriceRibbonService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/ribbonclient/ProductRibbonService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/ribbonclient/ReviewRibbonService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/util/RequestLogging.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/sample-dev.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/sample-prod.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/sample-test.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/sample.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/build/resources/main/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/com/ecommerce/price/DashboardApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logback-spring.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/passport-service/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/price/PriceServiceApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/price/controller/PriceController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/price-service/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/review-service/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/src/main/java/com/ecommerce/price/TurbineApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/turbine/src/main/resources/application.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_autoscaling_1_11_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_core_1_11_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_ec2_1_11_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_route53_1_11_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_sts_1_11_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_afterburner_2_7_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_woodstox_woodstox_core_5_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_inject_extensions_guice_assistedinject_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_inject_extensions_guice_grapher_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_inject_extensions_guice_multibindings_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_inject_guice_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_archaius_archaius_core_0_7_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_eureka_eureka_client_1_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_eureka_eureka_core_1_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_governator_governator_1_12_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_governator_governator_api_1_12_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_governator_governator_core_1_12_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_core_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_javanica_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_serialization_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_commons_util_0_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_core_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_eureka_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_httpclient_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_loadbalancer_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_transport_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_core_0_10_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_internal_0_10_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_zuul_zuul_core_1_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_client_1_19_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_core_1_19_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_server_1_19_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_servlet_1_19_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_thoughtworks_xstream_xstream_1_4_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_configuration_commons_configuration_1_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_jxpath_commons_jxpath_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_4_0_27_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_1_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_0_4_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_contexts_0_4_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_servo_0_4_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_undertow_undertow_core_1_3_25_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_undertow_undertow_servlet_1_3_25_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_undertow_undertow_websockets_jsr_1_3_25_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_2_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_2_9_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcpkix_jdk15on_1_55.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_55.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jettison_jettison_1_3_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_freemarker_freemarker_2_3_25_incubating.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_javax_el_3_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_validator_5_2_4_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_websocket_jboss_websocket_api_1_1_spec_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_xnio_xnio_api_3_3_6_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_xnio_xnio_nio_3_3_6_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_7_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_log4j_over_slf4j_1_7_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_actuator_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_freemarker_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_undertow_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_1_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_commons_1_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_config_client_1_2_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_context_1_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_core_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_eureka_client_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_eureka_server_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_1_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_archaius_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_config_1_2_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_eureka_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_eureka_server_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_hystrix_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_ribbon_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_zuul_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_retry_spring_retry_1_1_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_crypto_4_1_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_rsa_1_0_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_4_3_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__stax_stax_api_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ProductController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/service/ReviewServiceProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/api-gateway/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/eureka-server/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/passport-service/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/price-service/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/product-service/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/review-service/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/priceservice/PriceServiceApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/priceservice/controller/PriceController.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigurationController.java" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/SessionController.java" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/SessionRibbonController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/filter/AccessLogFilter.java" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/filter/AccessLogZuulFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/priceservice/vo/ProductPrice.java" afterPath="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/price/vo/ProductPrice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/api-gateway/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passport-service/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/passport-service/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/price-service/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/price-service/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/api-gateway/api-gateway_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/eureka-server/eureka-server_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/price-service/price-service_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/price-service/price-service_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/price-service/price-service_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/price-service/price-service_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/product-service/product-service_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/product-service/product-service_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/product-service/product-service_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/product-service/product-service_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/review-service/review-service_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/review-service/review-service_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/review-service/review-service_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/review-service/review-service_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/api-gateway-dev.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/api-gateway-prod.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/api-gateway-test.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-repo/api-gateway.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config-service/build/classes/java/main/application.yml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config-repo/sample-dev.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config-repo/sample-prod.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config-repo/sample-test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config-repo/sample.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/build.gradle" afterPath="$PROJECT_DIR$/api-gateway/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/api-gateway/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/ApiGatewayApplication.java" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/ApiGatewayApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-service/build.gradle" afterPath="$PROJECT_DIR$/config-service/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-service/src/main/java/com/ecommerce/configservice/ConfigServiceApplication.java" afterPath="$PROJECT_DIR$/config-service/src/main/java/com/ecommerce/configservice/ConfigServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka-server/build.gradle" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/ecommerce/eurekaserver/Application.java" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/ecommerce/eurekaserver/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passport-service/build.gradle" afterPath="$PROJECT_DIR$/passport-service/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passport-service/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/passport-service/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passport-service/src/main/java/com/ecommerce/passportservice/PassportServiceApplication.java" afterPath="$PROJECT_DIR$/passport-service/src/main/java/com/ecommerce/passportservice/PassportServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passport-service/src/main/java/com/ecommerce/passportservice/controller/PassportController.java" afterPath="$PROJECT_DIR$/passport-service/src/main/java/com/ecommerce/passportservice/controller/PassportController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passport-service/src/main/java/com/ecommerce/passportservice/vo/LoginResult.java" afterPath="$PROJECT_DIR$/passport-service/src/main/java/com/ecommerce/passportservice/vo/LoginResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/price-service/build.gradle" afterPath="$PROJECT_DIR$/price-service/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/price-service/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/price-service/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/build.gradle" afterPath="$PROJECT_DIR$/product-service/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/productservice/ProductServiceApplication.java" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/productservice/ProductServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/productservice/controller/ProductController.java" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/productservice/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/productservice/vo/ProductInfo.java" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/productservice/vo/ProductInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-service/build.gradle" afterPath="$PROJECT_DIR$/review-service/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/ReviewServiceApplication.java" afterPath="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/ReviewServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/controller/ReviewController.java" afterPath="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/controller/ReviewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/vo/ProductReview.java" afterPath="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/vo/ProductReview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/review-service/.gradle/" />
     <ignored path="$PROJECT_DIR$/review-service/build/" />
@@ -345,11 +87,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -2417,11 +2179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/review-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/dashboard/PriceServiceApplication.java" />
-        <option value="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/ReviewServiceApplication.java" />
-        <option value="$PROJECT_DIR$/turbine/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/price-service/src/main/java/com/ecommerce/price/PriceServiceApplication.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/PriceClient.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ReviewClient.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ProductClient.java" />
@@ -2433,7 +2190,6 @@
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ProductServiceFallback.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ReviewServiceFallback.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ProductService.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ItemDetailFeignController.java" />
         <option value="$PROJECT_DIR$/review-service/src/main/java/com/ecommerce/reviewservice/controller/ReviewController.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/feignclient/ReviewService.java" />
@@ -2468,6 +2224,12 @@
         <option value="$PROJECT_DIR$/config-repo/sample-test.properties" />
         <option value="$PROJECT_DIR$/config-repo/sample-prod.properties" />
         <option value="$PROJECT_DIR$/config-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/config-repo/api-gateway.properties" />
+        <option value="$PROJECT_DIR$/config-repo/api-gateway-dev.properties" />
+        <option value="$PROJECT_DIR$/config-repo/api-gateway-prod.properties" />
+        <option value="$PROJECT_DIR$/config-repo/api-gateway-test.properties" />
+        <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java" />
       </list>
     </option>
   </component>
@@ -2535,55 +2297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-cloud-gradle-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-cloud-gradle-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-cloud-gradle-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-cloud-gradle-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="config-repo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2869,7 +2583,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="738" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="738" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2883,7 +2598,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.628483" sideWeight="0.76332796" order="12" side_tool="false" content_ui="tabs" x="4" y="428" width="1280" height="242" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43498453" sideWeight="0.76332796" order="12" side_tool="false" content_ui="tabs" x="4" y="428" width="1280" height="242" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35218093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -3066,14 +2781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.7.RELEASE/8f92e4f93393dda9c11d4839a10c4aa66941870e/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -3188,14 +2895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.7.RELEASE/49134fcdaea19522741b2d940c4e5e5bee06c613/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -3236,7 +2935,7 @@
         <state relative-caret-position="390">
           <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3272,9 +2971,9 @@
         <state relative-caret-position="118">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3318,40 +3017,8 @@
         <state relative-caret-position="58">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-repo/sample-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-repo/sample-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" lean-forward="true" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-repo/sample.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-repo/sample-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3381,8 +3048,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-repo/api-gateway-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-repo/api-gateway.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-repo/api-gateway-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-repo/api-gateway-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/ecommerce/gateway/controller/ConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding />
         </state>
       </provider>
